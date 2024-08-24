@@ -58,4 +58,6 @@ Temporary Items
 
 # End of https://www.toptal.com/developers/gitignore/api/go,macos
 
-/mdp
+/mdp/mdp
+/wc/wc
+/interacting/todo/todo
