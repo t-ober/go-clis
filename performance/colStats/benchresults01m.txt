@@ -1,0 +1,6 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/t-ober/go-clis/performance/colStats
+BenchmarkRun-10    	      10	 248293375 ns/op	214887945 B/op	 2527035 allocs/op
+PASS
+ok  	github.com/t-ober/go-clis/performance/colStats	3.266s
