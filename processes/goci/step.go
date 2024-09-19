@@ -26,10 +26,12 @@ func (s step) execute() (string, error) {
 	cmd := exec.Command(s.exe, s.args...)
 	cmd.Dir = s.proj
 
+	// fmt.Println("(Regular) Executing", s.exe, s.args, "in", s.proj)
+
 	if err := cmd.Run(); err != nil {
 		return "", &stepErr{
-			step:  "go build",
-			msg:   "go build failed",
+			step:  s.name,
+			msg:   "failed to execute",
 			cause: err,
 		}
 	}

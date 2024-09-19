@@ -86,3 +86,4 @@ func run(root string, out io.Writer, cfg config) error {
 			return listFile(path, out)
 		})
 }
+
