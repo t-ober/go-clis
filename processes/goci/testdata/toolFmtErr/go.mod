@@ -1,3 +1,3 @@
-module github.com/t-ober/go-clis/processes/goci/testdata/tool
+module testdata/tool
 
-go 1.22.6
+go 1.16

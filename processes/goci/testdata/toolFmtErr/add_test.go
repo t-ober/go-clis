@@ -1,12 +1,18 @@
 package add
 
-import "testing"
+import (
+  "testing"
+)
 
 func TestAdd(t *testing.T) {
-	a, b := 1, 2
-	res := add(a, b)
-	exp := 3
-	if res != exp {
-		t.Fatalf("Expected %d, got %d", res, exp)
-	}
+  a := 2
+  b := 3
+
+  exp := 5
+
+  res := add(a, b)
+
+  if exp != res {
+    t.Errorf("Expected %d, got %d.", exp, res)
+  }
 }
