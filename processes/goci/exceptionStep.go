@@ -22,8 +22,6 @@ func (s exceptionStep) execute() (string, error) {
 	cmd.Stdout = &out
 	cmd.Dir = s.proj
 
-	// fmt.Println("(Exception) Executing", s.exe, s.args, "in", s.proj)
-
 	if err := cmd.Run(); err != nil {
 		return "", &stepErr{
 			step:  s.name,
