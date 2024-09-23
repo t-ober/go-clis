@@ -38,9 +38,10 @@ func init() {
 
 	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.pScan.yaml)")
 
-	// Cobra also supports local flags, which will only run
-	// when this action is called directly.
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+
+	rootCmd.PersistentFlags().StringP("hosts-file", "f", "pScan.hosts",
+		"pScan hosts file")
 
 	verstionTemplate := `{{printf "%s - version %s\n" .Name .Version}}`
 	rootCmd.SetVersionTemplate(verstionTemplate)
